@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#BBFFFF"
+android:orientation="vertical"
+android:paddingBottom="15dp"
+android:paddingLeft="15dp"
+android:paddingRight="15dp"
+android:paddingTop="15dp"
+tools:context="p07smsretriever.android.myapplicationdev.com.p07_smsretriever.FragmentFirst">
+
+
+<TextView
+    android:id="@+id/tvFrag1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Only SMS containing this number" />
+
+    <EditText
+        android:id="@+id/etNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnRetrieve1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Retrieve SMS" />
+
+        <Button
+            android:id="@+id/btnEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Email" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvsms1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SMS" />
+</LinearLayout>
